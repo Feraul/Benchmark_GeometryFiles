@@ -1,0 +1,17 @@
+cl1 = 1;
+Point(1) = {0, 0, 0, 1};
+Point(2) = {10, 0, 0, 1};
+Point(3) = {10, 100, 0, 1};
+Point(4) = {0, 100, 0, 1};
+Line(1) = {1, 2};
+Line(2) = {2, 3};
+Line(3) = {3, 4};
+Line(4) = {4, 1};
+Line Loop(6) = {1, 2, 3, 4};
+Plane Surface(6) = {6};
+Physical Point(7) = {1, 2};
+Physical Point(8) = {3, 4};
+Physical Line(9) = {1};
+Physical Line(10) = {3};
+Physical Line(11) = {2, 4};
+Physical Surface(12) = {6};
